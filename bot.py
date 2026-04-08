@@ -14,7 +14,8 @@ dp = Dispatcher()
 async def start(message: types.Message):
     buttons = [
         [InlineKeyboardButton(text="Заказать еду 🍔", web_app=WebAppInfo(url=WEB_APP_URL))],
-        [InlineKeyboardButton(text="Профиль 👤", callback_data="profile")],
+        [InlineKeyboardButton(text="заказать доставку", web_app=WebAppInfo(url=WEB_APP_URL))],
+        [InlineKeyboardButton(text="профиль setting", callback_data="profile")]
         [InlineKeyboardButton(text="Наши контакты 📞", callback_data="contacts")]
     ]
     keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
