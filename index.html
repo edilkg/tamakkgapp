@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя Доставка</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f4; text-align: center; padding: 20px; }
+        .card { background: white; border-radius: 15px; padding: 15px; margin-bottom: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        button { background: #fcd535; border: none; padding: 10px 20px; border-radius: 10px; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Меню Бишкек</h1>
+    <div class="card">
+        <h3>Плов Лазер</h3>
+        <p>250 сом</p>
+        <button onclick="sendOrder('Плов Лазер')">Добавить</button>
+    </div>
+    <script>
+        let tg = window.Telegram.WebApp;
+        tg.expand(); // Раскрыть на весь экран
+
+        function sendOrder(item) {
+            tg.sendData(item); // Отправляет название блюда боту
+            tg.close(); // Закрывает окно после заказа
+        }
+    </script>
+</body>
+</html>
