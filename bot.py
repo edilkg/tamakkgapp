@@ -20,7 +20,7 @@ async def start(message: types.Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
     
     await message.answer(
-        f"Привет, {message.from_user.first_name}! 👋\nМы рады видеть тебя здесь. 🍕🍔🍣\n\nПожалуйста, выбери один из пунктов:",
+        f"Привет, {message.from_user.first_name}! 👋\nПожалуйста, выбери один из пунктов:",
         reply_markup=keyboard
     )
 
