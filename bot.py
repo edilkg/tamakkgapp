@@ -6,7 +6,7 @@ from aiogram.types import WebAppInfo, InlineKeyboardMarkup, InlineKeyboardButton
 # ВСТАВЬ СВОЙ ТОКЕН ОТ BOTFATHER НИЖЕ (в кавычках)
 TOKEN = "8557711491:AAEqTlV4X6pA_J6hN7tVGTf4695jFsD_kS4"
 # ВСТАВЬ ССЫЛКУ ОТ VERCEL НИЖЕ (в кавычках)
-WEB_APP_URL = "npx plugins add vercel/vercel-plugin"
+WEB_APP_URL = "https://tamakkgapp.vercel.app/"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
