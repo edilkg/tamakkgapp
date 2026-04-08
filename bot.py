@@ -4,7 +4,7 @@ from aiogram.filters import CommandStart
 from aiogram.types import WebAppInfo, InlineKeyboardMarkup, InlineKeyboardButton
 
 # Твой токен и ссылка (проверь, чтобы не было лишних пробелов)
-TOKEN = "8557711491:AAEqT1V4X6pA_J6hN7tVGTf4695jfSD_kS4"
+TOKEN = "8557711491:AAEqTlV4X6pA_J6hN7tVGTf4695jFsD_kS4"
 WEB_APP_URL = "https://tamakkgapp.vercel.app/"
 
 bot = Bot(token=TOKEN)
