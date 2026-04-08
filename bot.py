@@ -15,9 +15,13 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def start(message: types.Message):
-    buttons = [
-        [InlineKeyboardButton(text="Заказать еду 🍔", web_app=WebAppInfo(url=WEB_APP_URL))],
-        [InlineKeyboardButton(text="оформить доставку 🚀", web_app=WebAppInfo(url=WEB_APP_URL))],
+   buttons = [
+        # Эти две кнопки будут в одном ряду
+        [
+            InlineKeyboardButton(text="Заказать еду 🍔", web_app=WebAppInfo(url=WEB_APP_URL)),
+            InlineKeyboardButton(text="оформить доставку 🚀", web_app=WebAppInfo(url=WEB_APP_URL))
+        ],
+        # Эти кнопки будут каждая на своей строке
         [InlineKeyboardButton(text="Профиль 👤", callback_data="profile")],
         [InlineKeyboardButton(text="Наши контакты 📞", callback_data="contacts")]
     ]
