@@ -3,8 +3,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart
 from aiogram.types import WebAppInfo, InlineKeyboardMarkup, InlineKeyboardButton
 
-# Твой токен и ссылка (проверь, чтобы не было лишних пробелов)
-TOKEN = "8557711491:AAEqTlV4X6pA_J6hN7tVGTf4695jFsD_kS4"
+TOKEN = "8557711491:AAEqT1V4X6pA_J6hN7tVGTf4695jfSD_kS4"
 WEB_APP_URL = "https://tamakkgapp.vercel.app/"
 
 bot = Bot(token=TOKEN)
@@ -14,8 +13,8 @@ dp = Dispatcher()
 async def start(message: types.Message):
     buttons = [
         [InlineKeyboardButton(text="Заказать еду 🍔", web_app=WebAppInfo(url=WEB_APP_URL))],
-        [InlineKeyboardButton(text="заказать доставку", web_app=WebAppInfo(url=WEB_APP_URL))],
-        [InlineKeyboardButton(text="профиль setting", callback_data="profile")]
+        [InlineKeyboardButton(text="Заказать доставку 🚀", web_app=WebAppInfo(url=WEB_APP_URL))],
+        [InlineKeyboardButton(text="Профиль 👤", callback_data="profile")],
         [InlineKeyboardButton(text="Наши контакты 📞", callback_data="contacts")]
     ]
     keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
